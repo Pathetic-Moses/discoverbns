@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta http-equiv="refresh" />
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Customer Log in</title>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=7.0,Transition=19)">
+</head>
+
+<body>
+	<p align="center"> <img border="0" src="images/logo.png" width="259" height="85"><br>
+</p>
+<table width="19%" border="0" align="center">
+  <tr> 
+    <td bgcolor="#FFFFFF"><div align="center"><FONT FACE="VERDANA" SIZE="2" COLOR="#000000"><B><font color="#336666">eStatements</font></B> 
+        </FONT></div></td>
+  </tr>
+</table>
+<table border="0" cellpadding="6" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="100%" class="AutoNumber4" height="203">
+        <tr>
+          
+    <td width="100%" height="19" valign="top" bordercolor="#EEF1FB" bgcolor="#EEF1FB"> 
+      <b><FONT FACE="VERDANA" SIZE="3" COLOR="#336666">Login to Your Account</FONT></b></td>
+        </tr>
+        <tr>
+          <td width="100%" height="158" valign="top">
+          
+  <form method="POST" name="login">
+        <hr color="#7B98E1">
+        <table width="38%" border="0">
+          <tr> 
+            <td width="36%"><font color="#336666" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+			User ID:</font><font color="#800000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+            <td width="64%"><font face="Arial" size="2"> 
+              <input type="text" name="userid" size="26" style="background-color: #EEF1FB">
+              </font></td>
+          </tr>
+          <tr> 
+            <td><font color="#336666" size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+              Pin Number:</font></td>
+            <td><input type="password" name="pswrd" size="26" style="background-color: #EEF1FB"></td>
+          </tr>
+          <tr> 
+            <td>&nbsp;</td>
+            <td>&nbsp; <input type="button" onclick="check(this.form)" value="Log In"> &nbsp;</td>
+          </tr>
+        </table>
+        <p>&nbsp; <img border="0" src="images/connect.gif" align="right" width="134" height="57"><img border="0" src="images/verisign.gif" width="100" height="72"></p>
+    <hr color="#7B98E1">
+  </form>
+          
+		  
+		        <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "EddieNoscone110" && form.pswrd.value == "2525236") {
+                    window.open('customerestatement.php')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("The information you provided does not match any of our records.Please re-enter your login information below...............")/*displays error message*/
+                }
+            }
+        </script>
+		  
+		  
+    </td>
+        </tr>
+      </table>
+  
+</body>
+
+</html>
